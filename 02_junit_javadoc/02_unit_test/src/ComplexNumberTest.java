@@ -49,7 +49,15 @@ public class ComplexNumberTest {
         // (2 +  5i) * ( 3 + 7i) = (-29 +  29i)
         // (2 + -4i) * 4         = (  8 + -16i)
 
-        // TODO: Test schreiben
+        ComplexNumber a = new ComplexNumber(2, -4);
+        ComplexNumber b = new ComplexNumber(2, 5);
+        ComplexNumber c = new ComplexNumber(-3, 5);
+        ComplexNumber d = new ComplexNumber(3, 7);
+        ComplexNumber e = new ComplexNumber(4);
+
+        assertEquals(new ComplexNumber(14, 22), a.multiply(c));
+        assertEquals(new ComplexNumber(-29, 29), b.multiply(d));
+        assertEquals(new ComplexNumber(8, -16), a.multiply(e));
     }
 
     /**
