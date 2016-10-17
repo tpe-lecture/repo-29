@@ -37,6 +37,23 @@ public final class PieChart {
         dataset.setValue("Witcher 3", 25);
         dataset.setValue("Fallout 4", 15);
         dataset.setValue("CS-GO", 40);
+        dataset.setValue("Trackmania", 20);
+        dataset.setValue("Pokemon", 40);
+        dataset.setValue("GranTurismo", 32);
+        dataset.setValue("FIFA17", 46);
+        dataset.setValue("Mouse", 20);
+        dataset.setValue("TombRider", 30);
+        dataset.setValue("Blade", 32);
+        dataset.setValue("PES17", 46);
+        dataset.setValue("1", 20);
+        dataset.setValue("3", 25);
+        dataset.setValue("4", 15);
+        dataset.setValue("2", 40);
+        dataset.setValue("5", 20);
+        dataset.setValue("6", 40);
+        dataset.setValue("7", 32);
+        dataset.setValue("8", 46);
+
 
         JFreeChart chart = ChartFactory.createPieChart3D(
                 title,
