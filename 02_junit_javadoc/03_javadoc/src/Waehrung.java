@@ -1,16 +1,28 @@
 // TODO: JavaDoc
 public class Waehrung {
 
-    // TODO: JavaDoc
+    /**
+     * Kurs der Warhrung.
+     * @param kurs
+     */
     private final int kurs;
 
-    // TODO: JavaDoc
+    /**
+     * Name der Warhrung.
+     * @param name
+     */
     private final String name;
 
-    // TODO: JavaDoc
+    /**
+     * Kuerzel der Warhrung.
+     * @param kuerzel
+     */
     private final String kuerzel;
 
-    // TODO: JavaDoc
+    /**
+     * Setzt den Standart Teiler auf 10000.
+     * @param TEILER
+     */
     private static final long TEILER = 10000;
 
     /**
@@ -26,7 +38,10 @@ public class Waehrung {
         this.kuerzel = kuerzel;
     }
 
-    // TODO: JavaDoc
+    /**
+     * Rechnet den B
+     * @param name
+     */
     public long umrechnen(long betrag, Waehrung toWaehrung) {
         return betrag * kurs / toWaehrung.kurs;
     }
@@ -35,7 +50,7 @@ public class Waehrung {
     public int getKurs() {
         return kurs;
     }
-    
+
     // TODO: JavaDoc
     public String getName() {
         return name;
