@@ -18,6 +18,10 @@ public class GameBoard extends Board{
 
     /** Alien, das durch das Bild läuft. */
     private AlienSprite alien;
+    private AlienSprite alien2;
+    private AlienSprite alien3;
+    private AlienSprite alien4;
+    private AlienSprite alien5;
 
     /** Asteroid. */
     private Sprite asteroid;
@@ -40,6 +44,10 @@ public class GameBoard extends Board{
 
         // TODO: Alien und Asteroid anlegen und positionieren
         alien = new AlienSprite(this,new Point(200,20));
+        alien2 = new AlienSprite(this,new Point(200,60));
+        alien3 = new AlienSprite(this,new Point(200,100));
+        alien4 = new AlienSprite(this,new Point(200,150));
+        alien5 = new AlienSprite(this,new Point(200,200));
         asteroid = new Asteroid(this,new Point(250,290));
         asteroid2 = new Asteroid(this,new Point(190,170));
     }
@@ -62,6 +70,11 @@ public class GameBoard extends Board{
         asteroid.draw(g);
         asteroid2.draw(g);
         alien.draw(g);
+        alien2.draw(g);
+        alien3.draw(g);
+        alien4.draw(g);
+        alien5.draw(g);
+
     }
 
     /**
@@ -74,13 +87,29 @@ public class GameBoard extends Board{
 
         // TODO: Die Objekte bewegen
         alien.move();
+        alien2.move();
+        alien3.move();
+        alien4.move();
+        alien5.move();
         asteroid.move();
         asteroid2.move();
         // Kollision erkennen
 // TODO: Einkommentieren
-        if ((alien.intersects(asteroid)||alien.intersects(asteroid2)) && alien.isActive()) {
+        if ((alien.intersects(asteroid)||alien.intersects(asteroid2)) && (alien.isActive())) {
             alien.explode();
+        }else if((alien2.intersects(asteroid)||alien2.intersects(asteroid2)) && (alien2.isActive())){
+            alien2.explode();
+        }else if((alien3.intersects(asteroid)||alien3.intersects(asteroid2)) && (alien3.isActive())){
+            alien3.explode();
+        }else if((alien4.intersects(asteroid)||alien4.intersects(asteroid2)) && (alien4.isActive())){
+            alien4.explode();
+        }else if((alien5.intersects(asteroid)||alien5.intersects(asteroid2)) && (alien5.isActive())){
+            alien5.explode();
         }
+
+
+
+
 
         return true;
     }
