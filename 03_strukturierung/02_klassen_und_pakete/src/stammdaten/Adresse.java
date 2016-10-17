@@ -1,4 +1,4 @@
-package firma.stammdaten;
+package stammdaten;
 
 
 

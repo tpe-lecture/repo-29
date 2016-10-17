@@ -1,4 +1,4 @@
-package firma.bestellwesen;
+package bestellwesen;
 
 /**
  * Eine Position der Bestellung.
