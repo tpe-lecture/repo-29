@@ -1,4 +1,8 @@
-// TODO: JavaDoc
+/**
+     * Repraesentiert die Waehrung.
+     *
+     * @author Burak Algir
+     */
 public class Waehrung {
 
     /**
@@ -39,8 +43,11 @@ public class Waehrung {
     }
 
     /**
-     * Rechnet den B
-     * @param name
+     * Rechnet zwischen Währung um.
+     *
+     * @param betrag der Betrag, der umgerechnet werden soll
+     * @param toWaehrung Waehrung in die umgerechnet werden soll
+     * @return der umgerechnete Betrag
      */
     public long umrechnen(long betrag, Waehrung toWaehrung) {
         return betrag * kurs / toWaehrung.kurs;
