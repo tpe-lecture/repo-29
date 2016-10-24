@@ -33,11 +33,11 @@ public class TestWesen {
      */
     @Test
     public void testUntoten() {
-        /*
+
         assertTrue("Untoter erbt nicht von Figur", new Untoter("") instanceof Wesen);
         assertEquals(Untoter.STANDARD_UNTERWASSERATMUNG, new Untoter("").getUnterwasseratmung());
         assertEquals(120, new Untoter("", 120).getUnterwasseratmung());
         assertEquals("Hugo", new Untoter("Hugo").getName());
-        */
+
     }
 }
