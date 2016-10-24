@@ -12,7 +12,7 @@ import de.smits_net.games.framework.sprite.Sprite;
  * Ein Asteroid.
  */
 public class Asteroid extends Sprite{
-// TODO: Von Sprite ableiten
+
 
     /**
      * Neues Objekt anlegen.
