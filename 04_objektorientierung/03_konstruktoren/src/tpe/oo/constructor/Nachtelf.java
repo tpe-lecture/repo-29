@@ -13,12 +13,17 @@ public class Nachtelf extends Wesen {
 
     // Konstruktoren fehlen. Bitte hier einfügen.
 
-    public Nachtelf(String name){
-        super(name);
-        this.naturwiderstand = STANDARD_NATURWIDERSTAND;
+    /**
+     * Konstruktor.
+     * @param name NAme des Elfens
+     */
+    public Nachtelf(String name) {
+        this(name, STANDARD_NATURWIDERSTAND);
+//        super(name);   geht so auch !!!
+//        this.naturwiderstand = STANDARD_NATURWIDERSTAND;
     }
 
-    public Nachtelf(String name, int naturwiderstand){
+    public Nachtelf(String name, int naturwiderstand) {
         super(name);
         this.naturwiderstand = naturwiderstand;
     }
