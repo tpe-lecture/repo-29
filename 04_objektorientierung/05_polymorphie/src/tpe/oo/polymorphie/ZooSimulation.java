@@ -32,6 +32,7 @@ public final class ZooSimulation {
         tiere[i++] = new Gorilla("Buck");
         tiere[i++] = new Giraffe("Debbie");
 
+
         for (ZooTier tier : tiere) {
             System.out.println(tier);
         }
