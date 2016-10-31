@@ -6,22 +6,22 @@ public interface AnalogController {
     /**
      * Nach oben bewegen.
      */
-    void up();
+    void up(double percentage);
 
     /**
      * Nach unten bewegen.
      */
-    void down();
+    void down(double percentage);
 
     /**
      * Nach links bewegen.
      */
-    void left();
+    void left(double percentage);
 
     /**
      * Nach rechts bewegen.
      */
-    void right();
+    void right(double percentage);
 
     /**
      * Liefert die aktuelle Position zurück.
