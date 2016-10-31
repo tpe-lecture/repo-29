@@ -17,6 +17,7 @@ public final class Geometer {
      */
     public static void main(String[] args) {
         Figur[] figuren = new Figur[10];
+
 //        Kreis[] kreise = new Kreis[5];
 //        Dreieck[] dreiecke = new Dreieck[5];
 
@@ -41,7 +42,7 @@ public final class Geometer {
 //        for (Dreieck dreieck : dreiecke) {
 //            gesamtflaeche += dreieck.flaeche();
 //        }
-        for(Figur figur : figuren){
+        for (Figur figur : figuren) {
             gesamtflaeche += figur.flaeche();
         }
 
