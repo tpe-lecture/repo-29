@@ -7,33 +7,8 @@ import tpe.oo.interfaces.api.DigitalController;
 
 public class DualShock4 implements AnalogController, DigitalController {
 
-    AnalogController a;
-    DigitalController d;
-
-
-    @Override
-    public void up() {
-        // TODO Auto-generated method stub
-        d.up();
-    }
-
-    @Override
-    public void down() {
-        // TODO Auto-generated method stub
-        d.down();
-    }
-
-    @Override
-    public void left() {
-        // TODO Auto-generated method stub
-        d.left();
-    }
-
-    @Override
-    public void right() {
-        // TODO Auto-generated method stub
-        d.right();
-    }
+    private AnalogController a = new AnalogControllerImpl();
+    private DigitalController d = new DigitalControllerImpl();
 
     @Override
     public void up(double percentage) {
@@ -60,9 +35,41 @@ public class DualShock4 implements AnalogController, DigitalController {
     }
 
     @Override
+    public void up() {
+        // TODO Auto-generated method stub
+        d.up();
+    }
+
+    @Override
+    public void down() {
+        // TODO Auto-generated method stub
+        d.down();
+    }
+
+    @Override
+    public void left() {
+        // TODO Auto-generated method stub
+        d.left();
+    }
+
+    @Override
+    public void right() {
+        // TODO Auto-generated method stub
+        d.right();
+    }
+
+    @Override
     public Point getPosition() {
         // TODO Auto-generated method stub
-        return null;
+        //return null;
+        Point resultAnalog = a.getPosition();
+        Point resultDigital = d.getPosition();
+        Point result = new Point();
+
+        result.x = resultAnalog.x + resultDigital.x;
+        result.y = resultAnalog.y + resultDigital.y;
+
+        return result;
     }
 
 }
