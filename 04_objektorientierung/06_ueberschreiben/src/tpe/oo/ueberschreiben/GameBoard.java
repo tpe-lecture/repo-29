@@ -6,6 +6,8 @@ import java.awt.Graphics;
 import java.awt.Point;
 import java.util.Random;
 
+import javax.swing.text.StyledEditorKit.ForegroundAction;
+
 import de.smits_net.games.framework.board.Board;
 
 /**
@@ -24,6 +26,11 @@ public class GameBoard extends Board {
     private Alien alien7;
     private Alien alien8;
     private Alien alien9;
+
+//    Alien[] aliens = new Alien[10];
+//    for (int i = 0; i < aliens.length(); i++) {
+//        aliens[i] = private Alien alie;
+//    }
 
 
     /**
