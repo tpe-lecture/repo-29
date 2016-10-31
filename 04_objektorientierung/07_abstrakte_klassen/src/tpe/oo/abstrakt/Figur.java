@@ -7,7 +7,7 @@ public abstract class Figur {
 
     /**
      * Berechnet die Fläche.
-     * @return flaeche.
+     * @return Die Fläche.
      */
     public abstract double flaeche();
 }
