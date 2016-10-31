@@ -39,6 +39,7 @@ public class Alien extends AnimatedSprite {
         setInvisibleAfterFrames(70);
     }
 
+    @Override
     public void mousePressed(){
         this.explode();
     }

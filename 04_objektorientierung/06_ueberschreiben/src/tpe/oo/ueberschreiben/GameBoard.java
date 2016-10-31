@@ -78,6 +78,13 @@ public class GameBoard extends Board {
 
     }
 
+    @Override
+    protected void drawGameOver(Graphics g) {
+        // TODO Auto-generated method stub
+        super.drawGameOver(g);
+        centerText(g, "GAME OVER ALIEN");
+    }
+
     /**
      * Spielsituation updaten. Wird vom Framework aufgerufen.
      */
@@ -94,16 +101,16 @@ public class GameBoard extends Board {
         alien8.move();
         alien9.move();
 
-        return;
-                alien.isVisible();
-//        alien2.isVisible();
-//        alien3.isVisible();
-//        alien4.isVisible();
-//        alien5.isVisible();
-//        alien6.isVisible();
-//        alien7.isVisible();
-//        alien8.isVisible();
-//        alien9.isVisible();
+        return
+        alien.isVisible() ||
+        alien2.isVisible()||
+        alien3.isVisible()||
+        alien4.isVisible()||
+        alien5.isVisible()||
+        alien6.isVisible()||
+        alien7.isVisible()||
+        alien8.isVisible()||
+        alien9.isVisible();
 
     }
 }
