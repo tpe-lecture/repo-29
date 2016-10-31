@@ -28,6 +28,7 @@ public class TestDigitalController {
      *
      * @param c Controller, der getestet wird
      */
+    @Test
     protected void testDigitalController(DigitalController c) {
         assertPointEquals(0, 0, c.getPosition());
         c.up();
@@ -57,6 +58,7 @@ public class TestDigitalController {
      * @param y y-Wert
      * @param point Punkt, der verglichen werden soll
      */
+    @Test
     protected void assertPointEquals(int x, int y, Point point) {
         assertEquals(new Point(x, y), point);
     }

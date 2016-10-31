@@ -47,5 +47,7 @@ public final class Geometer {
         }
 
         System.out.printf("Die Fläche beträgt: %.2f", gesamtflaeche);
+
+        public String meinstring = "abc";
     }
 }
