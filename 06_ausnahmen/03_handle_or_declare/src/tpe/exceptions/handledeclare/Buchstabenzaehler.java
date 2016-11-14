@@ -52,7 +52,6 @@ public class Buchstabenzaehler {
                 System.out.println("Statistik fehlerhaft.");
             }
         }
-
     }
 
     /**
