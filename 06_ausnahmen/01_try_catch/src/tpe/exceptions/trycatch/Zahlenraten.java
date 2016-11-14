@@ -31,7 +31,8 @@ public final class Zahlenraten {
      * @throws IOException I/O-Fehler
      */
     public static void main(String[] args)
-            throws NumberFormatException, IOException {
+            //throws NumberFormatException, IOException
+                                                        {
 
         // zu ratende Zahl bestimmen
         int zahl = new Random().nextInt(100) + 1;
@@ -56,6 +57,9 @@ public final class Zahlenraten {
                 }
             }
             catch (NumberFormatException ex) {
+                System.out.println("Bitte geben Sie eine Zahl ein!");
+            }
+            catch (IOException ex) {
                 System.out.println("Bitte geben Sie eine Zahl ein!");
             }
 
