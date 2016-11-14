@@ -58,6 +58,7 @@ public final class Zahlenraten {
             }
             catch (NumberFormatException ex) {
                 System.out.println("Bitte geben Sie eine Zahl ein!");
+                //System.out.println(ex.getMessage());
             }
             catch (IOException ex) {
                 System.out.println("Bitte geben Sie eine Zahl ein!");
