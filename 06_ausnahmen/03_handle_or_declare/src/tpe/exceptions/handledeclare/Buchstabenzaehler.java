@@ -18,8 +18,7 @@ public class Buchstabenzaehler {
      * @throws IOException wirft raus.
      * @throws StatistikException wirft raus.
      */
-    public static void main(String[] args)
-            throws StatistikException, IOException {
+    public static void main(String[] args) {
         Buchstabenzaehler bs = new Buchstabenzaehler();
         bs.run();
 
@@ -32,19 +31,26 @@ public class Buchstabenzaehler {
      *             Buchstabenhäufigkeit.
      * @throws IOException sfsf.
      */
-    private void run() throws StatistikException, IOException {
-        System.out.print("Bitte geben Sie den Dateinamen an: ");
-        try {
-            Scanner scanner = new Scanner(System.in);
-            String dateiname = scanner.nextLine();
-            int[] statistik;
+    private void run() {
+        Scanner scanner = new Scanner(System.in);
+        while (true) {
+            try {
+                System.out.print("Bitte geben Sie den Dateinamen an: ");
 
-            statistik = parseFile("assets/" + dateiname);
-            printStatistik(statistik);
-            scanner.close();
-        }
-        catch (IOException ex) {
-            System.out.println("Fehler: " + ex.getMessage());
+                String dateiname = scanner.nextLine();
+                int[] statistik;
+
+                statistik = parseFile("assets/" + dateiname);
+                printStatistik(statistik);
+
+            }
+            catch (IOException ex) {
+                System.out.println("Falscher Dateiname: " + ex.getMessage());
+                continue;
+            }
+            catch (StatistikException e) {
+                System.out.println("Statistik fehlerhaft.");
+            }
         }
 
     }
