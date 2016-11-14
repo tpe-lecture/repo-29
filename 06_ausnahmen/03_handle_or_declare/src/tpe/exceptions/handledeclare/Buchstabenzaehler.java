@@ -117,6 +117,8 @@ public class Buchstabenzaehler {
     }
 }
 
+
+
 // package tpe.exceptions.handledeclare;
 //
 //// import java.io.BufferedReader;
