@@ -40,19 +40,25 @@ public final class Zahlenraten {
 
         while (true) {
             System.out.print("Bitte geben Sie eine Zahl ein: ");
-            int geraten  = Integer.parseInt(readNumber());
-            versuche++;
 
-            if (geraten < zahl) {
-                System.out.println("Zu niedrig");
+            try {
+                int geraten  = Integer.parseInt(readNumber());
+                versuche++;
+                if (geraten < zahl) {
+                    System.out.println("Zu niedrig");
+                }
+                else if (geraten > zahl) {
+                    System.out.println("Zu hoch.");
+                }
+                else {
+                    System.out.printf("Richtig in %d Versuchen", versuche);
+                    break;
+                }
             }
-            else if (geraten > zahl) {
-                System.out.println("Zu hoch.");
+            catch (NumberFormatException ex) {
+                System.out.println("Bitte geben Sie eine Zahl ein!");
             }
-            else {
-                System.out.printf("Richtig in %d Versuchen", versuche);
-                break;
-            }
+
         }
     }
 }
